@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DeckGl Practice</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #map {
+        width: 80vw;
+        height: 100vh;
+      }
+      #tooltip {
+        background: white;
+        padding: 10px;
+        border-radius: 6px;
+        position: absolute;
+        box-shadow: 0 0 10px 10px gray;
+      }
+
+      #tooltip * {
+        margin: 0 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="tooltip"></div>
+    <script src="main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key={GOOGLE_MAPS_API_KEY}&callback=initGoogleMap"
+      async
+      defer
+    ></script>
+
+    <!-- <script src=""></script> -->
+  </body>
+</html>
